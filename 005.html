@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0"> <!–– responsive ––>
+	<meta name="description" content="">
+	<meta name="keywords" content="เว็บไซต์เรียนรู้ไวยากรณ์ภาษาเอสเปรันโต">
+	<link rel="shortcut icon" href="/favicon.ico"/> <!–– ยังไม่ได้ใส่ ––>
+
+	<link href="https://fonts.googleapis.com/css2?family=Sarabun:wght@100&display=swap" rel="stylesheet">  <!--Google Font-->
+
+	<link rel="stylesheet" href="./stilo.css">
+	<style type="text/css">
+		 body {
+			    font-family: 'Sarabun', sans-serif;
+			    text-align: center;
+			    font-size: 150%;
+			    /* font-weight: bold; */
+			  }
+	</style>
+
+	<title>เรียนรู้ไวยากรณ์ภาษาเอสเปรันโต</title>
+</head>
+<body>
+<div id="borders">
+	<br>
+		<br>
+			<h3>คำคุณศัพท์ (ต่อ)</h3>
+			<hr>
+			<br>อย่างที่บอกไปคำคุณศัพ์ขยายคำนาม ฉะนั้นเราจะใช้คู่กับคำนาม 
+			<br><small>แฮร่! ลองแปลด้วยตนเองดูซิ</small>
+			<br><span id="ve1">Bon<b>a</b> vir<b>o</b></span> - <span id="v1"></span>
+			<br><span id="ve2">Blank<b>a</b> kat<b>o</b></span> - <span id="v2"></span>
+			<br><span id="ve3">Dik<b>a</b> libr<b>o</b></span> - <span id="v3"></span>
+			<br><span id="ve4">Saĝ<b>a</b> hund<b>o</b></span> - <span id="v4"></span>
+				<br><button onclick="myFunction()" class="button">เฉลย ๆ</button>
+			<br><small>แฮร่! ง่ายละซิ </small>
+				<br><button onclick="myFunction1()" class="button">ลองกดนี้ดู</button>
+				<div id="myDIV" style="display:none">
+				เห็นไหมละว่าการสลับตำแหน่งก็สามารถทำได้ และความหมายก็ยังเหมือนเดิม
+				</div>
+
+			<hr>
+
+	<br>
+	<br>
+		<small><a href="./006.html" class="underline">หน้าถัดไป</a></small>
+	<br>
+	<br>
+</div>
+<script>
+	function myFunction() {
+  		document.getElementById("v1").innerHTML = "ผู้ชายดี";
+  		document.getElementById("v2").innerHTML = "แมวสีขาว";
+  		document.getElementById("v3").innerHTML = "หนังสือหนา";
+  		document.getElementById("v4").innerHTML = "สุนัขฉลาด";
+
+}
+
+	function myFunction1() {
+  		document.getElementById("ve1").innerHTML = "Vir<b>o</b> bon<b>a</b>";
+  		document.getElementById("ve2").innerHTML = "Kat<b>o</b> blank<b>a</b>";
+  		document.getElementById("ve3").innerHTML = "Libr<b>o</b> dik<b>a</b>";
+  		document.getElementById("ve4").innerHTML = "Hund<b>o</b> saĝ<b>a</b>";
+
+		var x = document.getElementById("myDIV");
+		  if (x.style.display === "none") {
+		    x.style.display = "block";
+		  } else {
+		    x.style.display = "none";
+		  }
+
+
+}
+</script>
+
+</body>
+</html>

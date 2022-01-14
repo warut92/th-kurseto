@@ -1,9 +1,14 @@
 <style type="text/css">
-  body {
+  body, .button {
     font-family: 'Sarabun', sans-serif;
     text-align: center;
     font-size: 150%;
     /* font-weight: bold; */
+  }
+
+  .button {
+    font-family: 'Sarabun', sans-serif;
+    text-align: center;
   }
 
   #rcorners {
