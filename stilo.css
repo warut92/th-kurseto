@@ -67,4 +67,14 @@ a{
     right: auto;
     width: 100%;
   }
-</style>
+
+
+.flip-card {
+  background-color: transparent;
+  width: 300px;
+  height: 300px;
+  perspective: 1000px;
+}
+
+
+
