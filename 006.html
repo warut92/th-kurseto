@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0"> <!–– responsive ––>
+	<meta name="description" content="">
+	<meta name="keywords" content="เว็บไซต์เรียนรู้ไวยากรณ์ภาษาเอสเปรันโต">
+	<link rel="shortcut icon" href="/favicon.ico"/> <!–– ยังไม่ได้ใส่ ––>
+
+	<link href="https://fonts.googleapis.com/css2?family=Sarabun:wght@100&display=swap" rel="stylesheet">  <!--Google Font-->
+
+	<link rel="stylesheet" href="./stilo.css">
+	<style type="text/css">
+		 body {
+			    font-family: 'Sarabun', sans-serif;
+			    text-align: center;
+			    font-size: 150%;
+			    /* font-weight: bold; */
+			  }
+		b {
+			color: red;
+		}	  
+	</style>
+
+	<title>เรียนรู้ไวยากรณ์ภาษาเอสเปรันโต</title>
+</head>
+<body>
+<div id="borders">
+			<h3>คำคุณศัพท์+คำนามที่เป็นพหูพจน์</h3>
+			<hr>
+			<br>โปรดจำไว้ว่าถ้าคำนามนั้นเป็นพหูพจน์อยู่ คำคุณศัพท์ที่มาขยายนั้นก็จะต้องลงท้ายด้วย -j ด้วย
+			<br><span id="ve1">Bon<b>aj</b> vir<b>oj</b></span> - <span id="v1">ผู้ชายดีหลายคน</span>
+			<br><span id="ve2">Blank<b>aj</b> kat<b>oj</b></span> - <span id="v2">แมวสีขาวหลายตัว</span>
+			<br><span id="ve3">Dik<b>aj</b> libr<b>oj</b></span> - <span id="v3">หนังสือหนาหลายเล่ม</span>
+			<br><span id="ve4">Saĝ<b>aj</b> hund<b>oj</b></span> - <span id="v4">สุนัขฉลาดหลายตัว</span>
+			<br><small>ง่ายละซิท่า ฮ่า ๆ </small>
+				<br><button onclick="myFunction1()" class="button">ถ้าสลับตำแหน่งละ</button>
+				<div id="myDIV" style="display:none">
+				การสลับตำแหน่งก็สามารถทำได้และความหมายก็ยังเหมือนเดิม
+				</div>
+
+			<hr>
+
+	<br>
+	<br>
+		<small><a href="./007.html" class="underline">หน้าถัดไป</a></small>
+	<br>
+	<br>
+</div>
+<script>
+	function myFunction1() {
+  		document.getElementById("ve1").innerHTML = "Vir<b>oj</b> bon<b>aj</b>";
+  		document.getElementById("ve2").innerHTML = "Kat<b>oj</b> blank<b>aj</b>";
+  		document.getElementById("ve3").innerHTML = "Libr<b>oj</b> dik<b>aj</b>";
+  		document.getElementById("ve4").innerHTML = "Hund<b>oj</b> saĝ<b>aj</b>";
+
+		var x = document.getElementById("myDIV");
+		  if (x.style.display === "none") {
+		    x.style.display = "block";
+		  } else {
+		    x.style.display = "none";
+		  }
+
+
+}
+</script>
+
+</body>
+</html>
