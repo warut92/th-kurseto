@@ -76,5 +76,12 @@ a{
   perspective: 1000px;
 }
 
+/*https://codepen.io/chriscoyier/pen/zYKaVvo*/
+.hidden {
+  opacity: 0;
+}
 
-
+.visible {
+  opacity: 1;
+  transition: opacity 1s ease-out;
+}
