@@ -7,8 +7,6 @@
 	<meta name="keywords" content="เว็บไซต์เรียนรู้ไวยากรณ์ภาษาเอสเปรันโต">
 	<link rel="shortcut icon" href="/favicon.ico"/> <!–– ยังไม่ได้ใส่ ––>
 
-	<link href="https://fonts.googleapis.com/css2?family=Sarabun:wght@100&display=swap" rel="stylesheet">  <!--Google Font-->
-
 	<link rel="stylesheet" href="./stilo.css">
 
 	<title>เรียนรู้ไวยากรณ์ภาษาเอสเปรันโต</title>
@@ -19,12 +17,13 @@
 			<hr>
 			<br>อย่างที่บอกไปคำคุณศัพ์ขยายคำนาม ฉะนั้นเราจะใช้คู่กับคำนาม 
 			<br>
-        	<div id="content">
-			<br>Bon<b class="a">a</b> vir<b class="o">o</b> - ผู้ชายดี
+        	<div id="content" class="flava">
+			Bon<b class="a">a</b> vir<b class="o">o</b> - ผู้ชายดี
 			<br>Blank<b class="a">a</b> kat<b class="o">o</b> - แมวสีขาว
 			<br>Dik<b class="a">a</b> libr<b class="o">o</b> - หนังสือหนา
 			<br>Saĝ<b class="a">a</b> hund<b class="o">o</b> - สุนัขฉลาด'
         	</div>
+        	ตัวเลือกเพิ่มเติม
         	<br>
         	<input type="radio" name="radiobutton" value="alt" onclick = "sxangxi();noto();">สลับตำแหน่ง
 			<input type="radio" name="radiobutton" value="trd" onclick = "sxangxi()">เปลี่ยนกลับเหมือนเดิม
@@ -47,11 +46,11 @@
     function sxangxi(){
     	switch(event.target.value){
         	case 'trd':{
-             htmlContent = '<br>Bon<b class="a">a</b> vir<b class="o">o</b> - ผู้ชายดี<br>Blank<b class="a">a</b> kat<b class="o">o</b> - แมวสีขาว<br>Dik<b class="a">a</b> libr<b class="o">o</b> - หนังสือหนา<br>Saĝ<b class="a">a</b> hund<b class="o">o</b> - สุนัขฉลาด';
+             htmlContent = 'Bon<b class="a">a</b> vir<b class="o">o</b> - ผู้ชายดี<br>Blank<b class="a">a</b> kat<b class="o">o</b> - แมวสีขาว<br>Dik<b class="a">a</b> libr<b class="o">o</b> - หนังสือหนา<br>Saĝ<b class="a">a</b> hund<b class="o">o</b> - สุนัขฉลาด';
               break;
             }
             case 'alt':{
-              htmlContent = '<br>Vir<b class="o">o</b> bon<b class="a">a</b> - ผู้ชายดี<br>Kat<b class="o">o</b> blank<b class="a">a</b> - แมวสีขาว<br>Libr<b class="o">o</b> dik<b class="a">a</b> - หนังสือหนา<br>Hund<b class="o">o</b> saĝ<b class="a">a</b> - สุนัขฉลาด';
+              htmlContent = 'Vir<b class="o">o</b> bon<b class="a">a</b> - ผู้ชายดี<br>Kat<b class="o">o</b> blank<b class="a">a</b> - แมวสีขาว<br>Libr<b class="o">o</b> dik<b class="a">a</b> - หนังสือหนา<br>Hund<b class="o">o</b> saĝ<b class="a">a</b> - สุนัขฉลาด';
     break;
             }
           }

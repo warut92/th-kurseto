@@ -7,19 +7,9 @@
 	<meta name="keywords" content="เว็บไซต์เรียนรู้ไวยากรณ์ภาษาเอสเปรันโต">
 	<link rel="shortcut icon" href="/favicon.ico"/> <!–– ยังไม่ได้ใส่ ––>
 
-	<link href="https://fonts.googleapis.com/css2?family=Sarabun:wght@100&display=swap" rel="stylesheet">  <!--Google Font-->
-
 	<link rel="stylesheet" href="./stilo.css">
 	<style type="text/css">
-		 body {
-			    font-family: 'Sarabun', sans-serif;
-			    text-align: center;
-			    font-size: 150%;
-			    /* font-weight: bold; */
-			  }
-		b {
-			color: red;
-		}	  
+	  
 	</style>
 
 	<title>เรียนรู้ไวยากรณ์ภาษาเอสเปรันโต</title>
@@ -28,19 +18,21 @@
 <div id="borders">
 			<h3>คำคุณศัพท์+คำนามที่เป็นพหูพจน์</h3>
 			<hr>
-			<br>โปรดจำไว้ว่าถ้าคำนามนั้นเป็นพหูพจน์อยู่ คำคุณศัพท์ที่มาขยายนั้นก็จะต้องลงท้ายด้วย -j ด้วย
-			<br><span id="ve1">Bon<b>aj</b> vir<b>oj</b></span> - <span id="v1">ผู้ชายดีหลายคน</span>
-			<br><span id="ve2">Blank<b>aj</b> kat<b>oj</b></span> - <span id="v2">แมวสีขาวหลายตัว</span>
-			<br><span id="ve3">Dik<b>aj</b> libr<b>oj</b></span> - <span id="v3">หนังสือหนาหลายเล่ม</span>
-			<br><span id="ve4">Saĝ<b>aj</b> hund<b>oj</b></span> - <span id="v4">สุนัขฉลาดหลายตัว</span>
-			<br><small>ง่ายละซิท่า ฮ่า ๆ </small>
-				<br><button onclick="myFunction1()" class="button">ถ้าสลับตำแหน่งละ</button>
-				<div id="myDIV" style="display:none">
-				การสลับตำแหน่งก็สามารถทำได้และความหมายก็ยังเหมือนเดิม
-				</div>
-
+			โปรดจำไว้ว่าถ้าคำนามนั้นเป็นพหูพจน์อยู่ คำคุณศัพท์ที่มาขยายนั้นก็จะต้องลงท้ายด้วย <b class="j">-j</b> ด้วย
+		<div id="content" class="flava">
+			<span id="ve1">Bon<b class="a">a</b><b class="j">j</b> vir<b class="o">o</b><b class="j">j</b></span> - <span id="v1">ผู้ชายดีหลายคน</span>
+			<br><span id="ve2">Blank<b class="a">a</b><b class="j">j</b> kat<b class="o">o</b><b class="j">j</b></span> - <span id="v2">แมวสีขาวหลายตัว</span>
+			<br><span id="ve3">Dik<b class="a">a</b><b class="j">j</b> libr<b class="o">o</b><b class="j">j</b></span> - <span id="v3">หนังสือหนาหลายเล่ม</span>
+			<br><span id="ve4">Saĝ<b class="a">a</b><b class="j">j</b> hund<b class="o">o</b><b class="j">j</b></span> - <span id="v4">สุนัขฉลาดหลายตัว</span>
+		</div>	
+        	ตัวเลือกเพิ่มเติม
+        	<br>
+        	<input type="radio" name="radiobutton" value="alt" onclick = "sxangxi();noto();">สลับตำแหน่ง
+			<input type="radio" name="radiobutton" value="trd" onclick = "sxangxi()">เปลี่ยนกลับเหมือนเดิม
 			<hr>
-
+				<small><div id="myDIV" style="display:none">
+				เช่นเดียวกัน การสลับตำแหน่งก็สามารถทำได้และความหมายก็ยังเหมือนเดิม
+				</div></small>
 	<br>
 	<br>
 		<small><a href="./007.html" class="underline">หน้าถัดไป</a></small>
@@ -48,21 +40,30 @@
 	<br>
 </div>
 <script>
-	function myFunction1() {
-  		document.getElementById("ve1").innerHTML = "Vir<b>oj</b> bon<b>aj</b>";
-  		document.getElementById("ve2").innerHTML = "Kat<b>oj</b> blank<b>aj</b>";
-  		document.getElementById("ve3").innerHTML = "Libr<b>oj</b> dik<b>aj</b>";
-  		document.getElementById("ve4").innerHTML = "Hund<b>oj</b> saĝ<b>aj</b>";
+	var targetDiv = document.getElementById('content');
+    var htmlContent = '';
+        
+    function sxangxi(){
+    	switch(event.target.value){
+        	case 'trd':{
+             htmlContent = 'Bon<b class="a">a</b><b class="j">j</b> vir<b class="o">o</b><b class="j">j</b> - ผู้ชายดีหลายคน<br>Blank<b class="a">a</b><b class="j">j</b> kat<b class="o">o</b><b class="j">j</b> - แมวสีขาวหลายตัว<br>Dik<b class="a">a</b><b class="j">j</b> libr<b class="o">o</b><b class="j">j</b> - หนังสือหนาหลายเล่ม<br>Saĝ<b class="a">a</b><b class="j">j</b> hund<b class="o">o</b><b class="j">j</b> - สุนัขฉลาดหลายตัว';
+              break;
+            }
+            case 'alt':{
+              htmlContent = 'Vir<b class="o">o</b><b class="j">j</b> bon<b class="a">a</b><b class="j">j</b> - ผู้ชายดีหลายคน<br>Kat<b class="o">o</b><b class="j">j</b> blank<b class="a">a</b><b class="j">j</b> - แมวสีขาวหลายตัว<br>Libr<b class="o">o</b><b class="j">j</b> dik<b class="a">a</b><b class="j">j</b> - หนังสือหนาหลายเล่ม<br>Hund<b class="o">o</b><b class="j">j</b> saĝ<b class="a">a</b><b class="j">j</b> - สุนัขฉลาดหลายตัว';
+    break;
+            }
+          }
+          targetDiv.innerHTML = htmlContent;
+        }
 
+
+	function noto(){
 		var x = document.getElementById("myDIV");
-		  if (x.style.display === "none") {
+		 if (x.style.display === "none") {
 		    x.style.display = "block";
-		  } else {
-		    x.style.display = "none";
 		  }
-
-
-}
+	}
 </script>
 
 </body>
