@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0"> <!–– responsive ––>
+	<meta name="description" content="">
+	<meta name="keywords" content="เว็บไซต์เรียนรู้ไวยากรณ์ภาษาเอสเปรันโต">
+	<link rel="shortcut icon" href="/favicon.ico"/> <!–– ยังไม่ได้ใส่ ––>
+
+	<link rel="stylesheet" href="./stilo.css">
+	<style type="text/css">
+	  
+	</style>
+
+	<title>เรียนรู้ไวยากรณ์ภาษาเอสเปรันโต</title>
+</head>
+<body>
+<div id="borders">
+			<h3>กริยา</h3>
+			<hr>
+			กริยาคือคำที่แสดงการกระทำ เช่น กิน วิ่ง ดื่ม พูด
+			<br>กริยาในภาษาเอสเปรันโตนั้นจะใช้ตัวลงท้ายต่อไปนี้เพื่อแสดงกาล (ช่วงเวลาที่การกระทำนั้นดำเนินอยู่)
+		<div class="flava">
+				<br><b class="os">-os</b> - อนาคตกาล (เกิดขึ้นในอนาคต)
+				<b class="as">-as</b> - ปัจจุบันกาล (ดำเนินอยูในปัจจุบัน)
+				<br><b class="is">-is</b> - อดีตกาล (เกิดขึ้นในอดีต)
+
+    </div>
+    ใช้กับประธานทุกเพศ ทุกพจน์
+    			<br><input type="radio" name="radiobutton" value="os" onclick = "sxangxi()">-os
+    			<input type="radio" name="radiobutton" value="as" onclick = "sxangxi()">-as
+    			<input type="radio" name="radiobutton" value="is" onclick = "sxangxi()">-is
+    		<div id="content" class="flava">
+				 Mi manĝ<b class="as">as</b> - ฉันกำลังกิน
+				 <br>Vi manĝ<b class="as">as</b> - คุณ/พวกคุณกำลังกิน
+				 <br>Ni manĝ<b class="as">as</b> - พวกเรากำลังกิน
+				 <br>Li manĝ<b class="as">as</b> - เขากำลังกิน
+				 <br>Ŝi manĝ<b class="as">as</b> - เธอกำลังกิน
+				 <br>Ili manĝ<b class="as">as</b> - พวกเขากำลังกิน
+				 <br>Kato manĝ<b class="as">as</b> - แมว 1 ตัวกำลังกิน
+				 <br>Hundoj manĝ<b class="as">as</b> - สุนัขหลายตัวกำลังกิน
+    </div>
+</div>
+	<br>
+	<br>
+		<small><a href="./007.html" class="underline">หน้าถัดไป</a></small>
+	<br>
+	<br>
+</div>
+<script>
+	var targetDiv = document.getElementById('content');
+    var htmlContent = '';
+        
+    function sxangxi(){
+    	switch(event.target.value){
+        	case 'os':{
+             htmlContent = 'Mi manĝ<b class="os">os</b> - ฉันจะกิน<br>Vi manĝ<b class="os">os</b> - คุณ/พวกคุณจะกิน<br>Ni manĝ<b class="os">os</b> - พวกเราจะกิน<br>Li manĝ<b class="os">os</b> - เขาจะกิน<br>Ŝi manĝ<b class="os">os</b> - เธอจะกิน<br>Ili manĝ<b class="os">os</b> - พวกเขาจะกิน<br>Kato manĝ<b class="os">os</b> - แมว 1 ตัวจะกิน<br>Hundoj manĝ<b class="os">os</b> - สุนัขหลายตัวจะกิน';
+              break;
+            }
+            case 'as':{
+              htmlContent = 'Mi manĝ<b class="as">as</b> - ฉันกำลังกิน<br>Vi manĝ<b class="as">as</b> - คุณ/พวกคุณกำลังกิน<br>Ni manĝ<b class="as">as</b> - พวกเรากำลังกิน<br>Li manĝ<b class="as">as</b> - เขากำลังกิน<br>Ŝi manĝ<b class="as">as</b> - เธอกำลังกิน<br>Ili manĝ<b class="as">as</b> - พวกเขากำลังกิน<br>Kato manĝ<b class="as">as</b> - แมว 1 ตัวกำลังกิน<br>Hundoj manĝ<b class="as">as</b> - สุนัขหลายตัวกำลังกิน';
+    break;
+            }
+            case 'is':{
+              htmlContent = 'Mi manĝ<b class="is">is</b> - ฉันกินแล้ว<br>Vi manĝ<b class="is">is</b> - คุณ/พวกคุณกินแล้ว<br>Ni manĝ<b class="is">is</b> - พวกเรากินแล้ว<br>Li manĝ<b class="is">is</b> - เขากินแล้ว<br>Ŝi manĝ<b class="is">is</b> - เธอกินแล้ว<br>Ili manĝ<b class="is">is</b> - พวกเขากินแล้ว<br>Kato manĝ<b class="is">is</b> - แมว 1 ตัวกินแล้ว<br>Hundoj manĝ<b class="is">is</b> - สุนัขหลายตัวกินแล้ว';
+    break;
+            }
+          }
+          targetDiv.innerHTML = htmlContent;
+        }
+
+</script>
+</body>
+</html>
