@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0"> <!–– responsive ––>
+	<meta name="description" content="">
+	<meta name="keywords" content="เว็บไซต์เรียนรู้ไวยากรณ์ภาษาเอสเปรันโต">
+	<link rel="shortcut icon" href="/favicon.ico"/> <!–– ยังไม่ได้ใส่ ––>
+
+	<link rel="stylesheet" href="./stilo.css">
+	<style type="text/css">
+	  
+	</style>
+
+	<title>เรียนรู้ไวยากรณ์ภาษาเอสเปรันโต</title>
+</head>
+<body>
+<div id="borders">
+			<h3>กรรม</h3>
+			<hr>
+			จากเนื้อหาที่แล้วมีการยกตัวอย่างประโยคด้วยกริยา "กิน" แล้วกินอะไรละ สมมติว่า "กินปลา" ปลานั้นแหละเป็นกรรม
+			<br>กรรมก็คือคำที่ถูกกระทำมาจากประธานผ่านทางกริยา ซึ่งเราจะใช้ตัวลงท้าย <b class="n">-n</b>
+			<br>ในตัวอย่าง <big>"กินปลา"</big>
+    			<br><input type="radio" name="radiobutton" value="os" onclick = "sxangxi()"><b class="os">-os</b>
+    			<input type="radio" name="radiobutton" value="as" onclick = "sxangxi()"><b class="as">-as</b>
+    			<input type="radio" name="radiobutton" value="is" onclick = "sxangxi()"><b class="is">-is</b>
+    		<div id="content" class="flava">
+				 Mi manĝ<b class="as">as</b> fiŝ<b class="o">o</b><b class="n">n</b>. - ฉันกำลังกินปลา
+				 <br>Vi manĝ<b class="as">as</b> fiŝ<b class="o">o</b><b class="n">n</b>. - คุณ/พวกคุณกำลังกินปลา
+				 <br>Ni manĝ<b class="as">as</b> fiŝ<b class="o">o</b><b class="n">n</b>. - พวกเรากำลังกินปลา
+				 <br>Li manĝ<b class="as">as</b> fiŝ<b class="o">o</b><b class="n">n</b>. - เขากำลังกินปลา
+				 <br>Ŝi manĝ<b class="as">as</b> fiŝ<b class="o">o</b><b class="n">n</b>. - เธอกำลังกินปลา
+				 <br>Ili manĝ<b class="as">as</b> fiŝ<b class="o">o</b><b class="n">n</b>. - พวกเขากำลังกินปลา
+				 <br>Kato manĝ<b class="as">as</b> fiŝ<b class="o">o</b><b class="n">n</b>. - แมว 1 ตัวกำลังกินปลา
+				 <br>Hundoj manĝ<b class="as">as</b> fiŝ<b class="o">o</b><b class="n">n</b>. - สุนัขหลายตัวกำลังกินปลา
+    </div>
+
+	<br>
+	<br>
+		<small><a href="./007.html" class="underline">หน้าถัดไป</a></small>
+	<br>
+	<br>
+</div>
+<script>
+	var targetDiv = document.getElementById('content');
+    var htmlContent = '';
+        
+    function sxangxi(){
+    	switch(event.target.value){
+        	case 'os':{
+             htmlContent = 'Mi manĝ<b class="os">os</b> fiŝ<b class="o">o</b><b class="n">n</b>. - ฉันจะกินปลา<br>Vi manĝ<b class="os">os</b> fiŝ<b class="o">o</b><b class="n">n</b>. - คุณ/พวกคุณจะกินปลา<br>Ni manĝ<b class="os">os</b> fiŝ<b class="o">o</b><b class="n">n</b>. - พวกเราจะกินปลา<br>Li manĝ<b class="os">os</b> fiŝ<b class="o">o</b><b class="n">n</b>. - เขาจะกินปลา<br>Ŝi manĝ<b class="os">os</b> fiŝ<b class="o">o</b><b class="n">n</b>. - เธอจะกินปลา<br>Ili manĝ<b class="os">os</b> fiŝ<b class="o">o</b><b class="n">n</b>. - พวกเขาจะกินปลา<br>Kato manĝ<b class="os">os</b> fiŝ<b class="o">o</b><b class="n">n</b>. - แมว 1 ตัวจะกินปลา<br>Hundoj manĝ<b class="os">os</b> fiŝ<b class="o">o</b><b class="n">n</b>. - สุนัขหลายตัวจะกินปลา';
+              break;
+            }
+            case 'as':{
+              htmlContent = 'Mi manĝ<b class="as">as</b> fiŝ<b class="o">o</b><b class="n">n</b>. - ฉันกำลังกินปลา<br>Vi manĝ<b class="as">as</b> fiŝ<b class="o">o</b><b class="n">n</b>. - คุณ/พวกคุณกำลังกินปลา<br>Ni manĝ<b class="as">as</b> fiŝ<b class="o">o</b><b class="n">n</b>. - พวกเรากำลังกินปลา<br>Li manĝ<b class="as">as</b> fiŝ<b class="o">o</b><b class="n">n</b>. - เขากำลังกินปลา<br>Ŝi manĝ<b class="as">as</b> fiŝ<b class="o">o</b><b class="n">n</b>. - เธอกำลังกินปลา<br>Ili manĝ<b class="as">as</b> fiŝ<b class="o">o</b><b class="n">n</b>. - พวกเขากำลังกินปลา<br>Kato manĝ<b class="as">as</b> fiŝ<b class="o">o</b><b class="n">n</b>. - แมว 1 ตัวกำลังกินปลา<br>Hundoj manĝ<b class="as">as</b> fiŝ<b class="o">o</b><b class="n">n</b>. - สุนัขหลายตัวกำลังกินปลา';
+    break;
+            }
+            case 'is':{
+              htmlContent = 'Mi manĝ<b class="is">is</b> fiŝ<b class="o">o</b><b class="n">n</b>. - ฉันกินปลาแล้ว<br>Vi manĝ<b class="is">is</b> fiŝ<b class="o">o</b><b class="n">n</b>. - คุณ/พวกคุณกินปลาแล้ว<br>Ni manĝ<b class="is">is</b> fiŝ<b class="o">o</b><b class="n">n</b>. - พวกเรากินปลาแล้ว<br>Li manĝ<b class="is">is</b> fiŝ<b class="o">o</b><b class="n">n</b>. - เขากินปลาแล้ว<br>Ŝi manĝ<b class="is">is</b> fiŝ<b class="o">o</b><b class="n">n</b>. - เธอกินปลาแล้ว<br>Ili manĝ<b class="is">is</b> fiŝ<b class="o">o</b><b class="n">n</b>. - พวกเขากินปลาแล้ว<br>Kato manĝ<b class="is">is</b> fiŝ<b class="o">o</b><b class="n">n</b>. - แมว 1 ตัวกินปลาแล้ว<br>Hundoj manĝ<b class="is">is</b> fiŝ<b class="o">o</b><b class="n">n</b>. - สุนัขหลายตัวกินปลาแล้ว';
+    break;
+            }
+          }
+          targetDiv.innerHTML = htmlContent;
+        }
+
+</script>
+</body>
+</html>
